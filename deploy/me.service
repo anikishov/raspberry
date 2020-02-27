@@ -1,0 +1,11 @@
+[Unit]
+Description=Raspberry temperature monitor
+After=network.target auditd.service
+[Service]
+Type=simple
+ExecStart=/opt/me/send_temp.py
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
