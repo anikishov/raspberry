@@ -3,7 +3,7 @@
 ```
 cd /opt/
 git clone git@github.com:anikishov/me.git && cd me
-python3 -m venv env && source env/bin/active
+python3 -m venv env && source env/bin/activate
 pip3 install -r requirerments.txt
 cp /opt/me/deploy/me.service /etc/systemd/system/me.service
 systemctl enable me.service
